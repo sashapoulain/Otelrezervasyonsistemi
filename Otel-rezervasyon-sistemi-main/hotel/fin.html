@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\plugins\bootstrapv5\css\bootstrap.min.css">
+    <link rel="stylesheet" href="assets\plugins\fontawesome5.14.0\css\fontawesome.css">
+    <link rel="stylesheet" href="assets\plugins\fontawesome5.14.0\css\font-awesome-animation.min.css">
+    <link rel="stylesheet" href="assets\plugins\fontawesome5.14.0\css\all.css">
+    <link rel="stylesheet"  href="assets\hotel\css\hotel.css">
+    <link rel="shortcut icon" type="image/png" href="assets\hotel\img\pool.jpg"> 
+   
+    <title>BODRUM HOTEL</title>
+  </head>
+  <body>
+    <div class="sidebar">
+        <div class="float-end mt-4">
+            <a href="#"><button type="button" class="btn btn-light btn-1">Yeni Rezarvasyon Yap</button><a>
+            <a href="#"><button type="button" class="btn btn-light btn-1">Dil Seçimi</button><a>
+
+        </div>
+        <div class="header">
+          <h5 class="mainheader"><strong>BODRUM HOTEL</strong></h5>
+          <span class="secheader">Rezarvasyon Sistemi</span>
+          
+        </div>
+    </div>
+    <div class="content">
+        <div class="container-fluid">
+          <div class="container">
+             <div class="row">
+                <div class="col-12">
+                            <div class="col-6 fin1">
+                                <div class="position-absolute start-50 translate-middle field1">
+                                    <i class="fas fa-clipboard-check check text-center" ></i>
+                                    <p class="kayıt1 text-center">Rezarvasyon kaydınız alınmıştır.</p>
+                                    <p class="text-center kayıt2">Rezarvasyon özetiniz aşağıdaki gibidir. Rezarvasyon kaydınızda değişiklik veya yeni rezarvasyon yapmak için aşağıdaki linkleri kullanabilirsiniz.</p>
+                                    <div class="d-grid gap-2 d-md-block button-group">
+                                        <button class="btn buton1" type="button"><a href="index.php" class="btn link1" role="button" aria-disabled="true">Yeni Rezarvasyon Yap</a></button>
+                                        <button class="btn buton2" type="button"><a href="index.php" class="btn link2" tabindex="-1" role="button" aria-disabled="true">Rezarvasyonu Güncelle</a></button>
+                                        <button class="btn buton3" id="cancelb" type="button"><a href="#" class="btn link3" tabindex="-1" role="button" aria-disabled="true">Rezarvasyonu İptal Et</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 fin2">
+                               <div class="container">
+                                   <div class="row">
+                                       <div class="float-start">
+                                        <div class="row">
+                                            <div class="col sonuc1">
+                                                <p class="card-text"><strong>Giriş Tarihi:</strong></p>
+                                                <p class="card-text">20.07.2021</p>
+                                                <p class="card-text"><strong>Çıkış Tarihi:</strong></p>
+                                                <p class="card-text">23.07.2021</p>
+                                            </div>
+                                            <div class="col">
+                                                <p class="card-text"><strong>Yetişkin Sayısı:</strong></p>
+                                                <p class="card-text">2</p>
+                                                <p class="card-text"><strong>Çocuk Sayısı:</strong></p>
+                                                <p class="card-text">1</p>
+                                            </div>
+                                            <div class="col">
+                                                <p class="card-text"><strong>Oda Tipi:</strong></p>
+                                                <p class="card-text">Standart</p>
+                                                <p class="card-text"><strong>Manzara:</strong></p>
+                                                <p class="card-text">Deniz Manzarası</p>
+                                            </div>
+                                        </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="container">
+                                    <div class="row">
+                                        <div class="float-end">
+                                            <div class="row">
+                                                <div class="col sonuc2">
+                                                    <p class="card-text"><strong>Oda Fiyatı</strong></p>
+                                                    <p class="card-text">1.500 TL</p>
+                                                    <p class="card-text"><strong>Konaklama</strong></p>
+                                                    <p class="card-text">2.500 TL</p>
+                                                </div>
+                                                <div class="col sonuc3">
+                                                    <p class="card-text"><strong>İndirim (CODE100)</strong></p>
+                                                    <p class="card-text">-100 TL</p>
+                                                    <p class="card-text"><strong>TOPLAM TUTAR</strong></p>
+                                                    <p class="card-text">3.900</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>                                
+                </div> <!-- col-12 end -->
+             </div> <!-- row end -->
+          </div> <!-- container end -->
+        </div> <!-- containerfluid end -->
+    </div>  <!-- content end -->
+  
+    <script src="assets\plugins\jqueryv36\jquery-3.6.0.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="assets\plugins\bootstrapv5\js\bootstrap.min.js"></script>
+    <script>
+    var btncancelb =document.getElementById("cancelb");
+    btncancelb.onclick=function(){
+        var retVal = confirm("Rezervasyon kaydınızı iptal etmek istediğinize emin misiniz?");
+        if (retVal == true)
+        {
+            alert("Rezarvasyonunuz iptal edilmiştir.");
+            return true;
+        } 
+        else
+        {
+            alert("Rezarvasyonunuz devam ediyor.");
+            return false;
+        }
+    }
+    </script>
+  </body>
+</html>

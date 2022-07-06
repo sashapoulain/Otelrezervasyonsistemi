@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body{font-family: 'Raleway', sans-serif;}
+.sidebar{background: #283e71; width: 100%; height: 80px;}
+.sidebar .header{height: 70px; width:100%;  background-color: transparent; display:block;}
+.sidebar .header .mainheader{ margin-left:20px; font-family: sans-serif; font-size:30px; color:aliceblue; padding-left: 7px; padding-top: 6px; }
+.sidebar .header .secheader{font-family: sans-serif; margin-left: 20px; font-size:14px; color:aliceblue; padding-left: 7px; padding-bottom: 8px;}
+.btn-1{font-size:13px; border-radius: 0; border: 1px solid #c7eaff; margin-right: 7px; font-family: sans-serif; font-weight: bold; color:#283e71; box-shadow:none !important;}
+.content{background: white; width:100%;  position: sticky; }
+.content .container-fluid{background: white; width: 100%; margin-top: 10px; }
+.content .col-12{background: #f0f3f7; width: 100%; height: 600px !important; margin-left: 5px; margin-top: 10px; }
+.col-12 .cards{background: white; height: 95%; margin-top: 10px;}
+.col-12 .card-body{background: white; height: 100%;}
+.content .row-2{background-color: white; width: 100%; height: 460px;}
+.wizard > .content > .body {padding:0; margin-bottom: 0; width: 100% !important; margin-left: 10px !important;}
+.wizard .content{background: white; margin-bottom: -15px;}
+.row-2 .otel{background: white; height: 100px; width: 100%;}
+.row-2 .parent{background: white; height: 130px; width: 50%;}
+.row-2 .child{background: white; width: 50%; height: 130px; }
+.row-2 .date1{background: white; width: 50%; height: 130px;}
+.row-2 .date2{background: white; width: 50%; height: 130px;}
+.wizard > .steps .current a, .wizard > .steps .current a, .wizard > .steps .current a{background:white; width: 200px; height: 60px; font-size:14px; text-align: center;}
+.wizard > .steps .current a, .wizard > .steps .current a:hover, .wizard > .steps .current a:hover{background:#a6bbc9; width: 260px; height: 50px; font-size:15px; text-align: center; font-family: sans-serif; }
+.wizard > .steps .disabled a, .wizard > .steps .disabled a:hover, .wizard > .steps .disabled a:hover{background:#e8f3b1; text-align: center; font-family: sans-serif; font-size: 15px; }
+.wizard > .steps .disabled a, .wizard > .steps .disabled a, .wizard > .steps .disabled a{background:#e4e4e4; width: 260px; height: 50px; font-size:15px; text-align: center; font-family: sans-serif;}
+.wizard > .steps .done a, .wizard > .steps .done a:hover, .wizard > .steps .done a:active{width:230px; background:#e4e4e4; font-size:13px; font-family: sans-serif;}
+.wizard > .steps .number{font-family: sans-serif; font-size:15px;}
+.otel .label-t{border-radius: 0;  margin-top:27px;  font-size: 15px; font-family: sans-serif; background: gainsboro; color: grey;}
+.select2-container--default .select2-selection--single{border: 1px solid #283e71; border-radius: 0; width: 100%; height: 38px;}
+.select2-search--dropdown .select2-search__field{background: aliceblue; font-size: 15px; font-family: sans-serif;}
+.select2-results__option{background: #f0f3f7; font-size: 15px; font-family:sans-serif;}
+.select2-container--default .select2-results__option--selected{background: aliceblue;}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {background: gainsboro; font-size:15px; font-family:sans-serif;}
+.select2-container--default .select2-search--dropdown .select2-search__field{border: 1px solid white;}
+.select2-container--default .select2-results>.select2-results__options {overflow-y: hidden;}
+.datecardx{border-radius:0 ; border: 1px solid white; height:120px; max-height: 120px;}
+.datecardx .card-header{font-size: 15px; font-family: sans-serif; color: grey; background: #a6bbc9; border-radius: 0;}
+.datecardx .card-body{background: whitesmoke; padding-bottom: 0 !important;}
+.datecardx .card-body .datepicker-addon{background: gainsboro; color: black; box-shadow: none; border-radius: 0; border: 1px solid #a6bbc9; font-size: 15px; font-family:sans-serif;}
+.datepicker-inline{width: 500px;}
+.datecardy{border-radius:0 ;  border: 1px solid white; height:120px; max-height: 120px;}
+.datecardy .card-body{background: whitesmoke; padding-bottom: 0 !important;}
+.datecardy .card-header{font-size: 15px; font-family: sans-serif; color: grey; background: #a6bbc9; border-radius: 0;}
+.datecardy .card-body .datepicker-addon{background: gainsboro; color: black; box-shadow: none; border-radius: 0; border: 1px solid #a6bbc9; font-size: 15px; font-family:sans-serif;}
+.wizard > .content > .body label{ font-size: 15px; font-family: sans-serif; color: grey; border-radius:0; margin-top: 19px; border-radius: 1px solid black;}
+.select2-search--dropdown{font-family: sans-serif; border-radius: 0; }
+.select2-container--default .select2-selection--single .select2-selection__arrow {top: 5px;}
+/*2.part*/
+.wizard .div-o-m h4, .wizard .div-m-o h4{color: #283e71; font-size: 16px; font-family: sans-serif;}
+.wizard .div-o-m h4:hover, .wizard .div-m-o h4:hover{color: #e8f3b1; font-size: 16px; font-family: sans-serif;}
+.wizard .div-o-m .card-header{font-size: 15px; background:#e4e4e4; font-family:sans-serif; color: black;}
+.wizard .div-m-o .card-header{font-size: 15px; background:#e4e4e4; font-family:sans-serif; color: black;}
+.wizard .div-o-m .card-header:hover{font-size: 15px; background:#e4e4e4; font-family:sans-serif; color: lightsteelblue;}
+.wizard .div-m-o .card-header:hover{font-size: 15px; background:#e4e4e4; font-family:sans-serif; color: lightsteelblue;}
+.wizard .div-m-o .card-body img{width: 220px; height: 90px;}
+.wizard .div-o-m .card-body img{width: 220px; height: 90px;}
+.wizard .div-m-o p{font-size:13px; color: #283e71; font-family: sans-serif; padding: 5px; margin-left: 8px;}
+.wizard .div-o-m p{font-size:13px; color: #283e71; font-family: sans-serif; padding:5px; margin-left: 8px;}
+.wizard .div-m-o p:hover{font-size:14px; color: #e8f3b1; font-family: sans-serif; padding: 5px;}
+.wizard .div-o-m p:hover{font-size:14px; color: #e8f3b1; font-family: sans-serif; padding:5px;}
+.wizard .row .pic-1{background: white; height:200px !important; padding-right: 30px !important;}
+.wizard .row .pic-1 .pic-card{background: white; border: 1px solid #a6bbc9; width:250px; height: 190px;border-radius:0;}
+.wizard .row .pic-2{background:white;height:200px !important; padding-right: 30px !important; }
+.wizard .row .pic-2 .pic-card-2{background: white; border: 1px solid #a6bbc9; width:250px; height: 190px;border-radius:0;}
+.wizard .row .pic-3{background:white;height:200px !important; padding-right: 30px !important;}
+.wizard .row .pic-3 .pic-card-3{background: white; border: 1px solid #a6bbc9; width:250px; height: 190px;border-radius:0;}
+.wizard .row .pic-4{background:white; height:100px;}
+.wizard .row .pic-4 .pic-card-4{background: white; border: 1px solid #a6bbc9; width:250px; height: 190px;border-radius:0;}
+.wizard .row .pic-5{background: white;}
+.wizard .row .pic-5 .pic-card-5{background: white; border: 1px solid #a6bbc9; width:250px; height: 190px;border-radius:0;}
+
+.wizard .row .pic-6{background:white;}
+.wizard .row .pic-6 .pic-card-6{background: white; border: 1px solid #a6bbc9; width:250px; height: 190px;border-radius:0;}
+/*2.part*/
+
+
+
+/*3.part payment*/
+.wizard .step-3{background: white; width: 100%; height:430px;}
+.wizard .pay-row{background: white; width: 100%; height:430px;}
+.wizard .pay-row .pay-col-1{background: white;}
+.wizard .pay-col-1 .demo-container{background: white; margin-top: 20px; height: 380px; overflow: auto;}
+.wizard .pay-col-1 .demo-container .isim{font-family: sans-serif; font-size:13px; border: 1px solid #a6bbc9; margin-bottom: 4px; border-radius:5px; margin-left:5px; height: 40px; width:90%;}
+.wizard .pay-col-1 .demo-container .no{font-family: sans-serif; font-size:13px; border: 1px solid #a6bbc9; margin-bottom: 4px; border-radius:5px; margin-left:5px; height: 40px; width: 90%;}
+.wizard .pay-col-1 .demo-container .y-cvc{font-family: sans-serif; font-size:13px; border: 1px solid #a6bbc9; margin-bottom: 20px; border-radius:5px; margin-left:5px; height: 40px; width:90%;}
+.wizard .pay-col-1 .demo-container .d-pic{font-family: sans-serif; font-size:13px; border: 1px solid #a6bbc9; margin-bottom: 4px; border-radius:8px; margin-left:5px; width: 90%; }
+.wizard .pay-row .pay-col-2{background: white; }
+.wizard .pay-row .pay-col-2 .c-sum{background: white; width: 100%; height: 410px; margin-top:7px;}
+.wizard .pay-row .pay-col-2 .c-sum .sum{background: gainsboro; height: 40%;}
+.wizard .pay-row .pay-col-2 .c-sum .sum .sum1{background: gainsboro; height: 98%;}
+.wizard .pay-row .pay-col-2 .c-sum .sum .sum1 .col-sm .label1{font-family:sans-serif; font-size:14px; color:#283e71;}
+.wizard .pay-row .pay-col-2 .c-sum .sum .sum1 .col-sm .label2{font-family:sans-serif; font-size:14px; color:#283e71;}
+.wizard .pay-row .pay-col-2 .c-sum .sum .sum1 .col-sm .label2:hover{font-family:sans-serif; font-size:14px; color: lightblue;}
+.wizard .pay-row .pay-col-2 .c-sum .sum-2{background: gainsboro; height: 15%;}
+.wizard .pay-row .pay-col-2 .c-sum .sum2{height: 95%; background: gainsboro;}
+.wizard .pay-row .pay-col-2 .c-sum .sum-2 .btn-dark{font-size: 13px; font-family: sans-serif; box-shadow: none; text-align: center; margin-top: 13px; margin-right: 15px; background: lightsteelblue; color:grey;}
+.wizard .pay-row .pay-col-2 .c-sum .sum-2 .kupon{width: 180px; height: 40px; background: lightsteelblue; font-size: 13px; font-family: sans-serif; margin-top: 10px; color: black; border: 1px solid #a6bbc9 ; border-radius: 5px;}
+.wizard .pay-row .pay-col-2 .c-sum .sum-3{background: gainsboro; height: 35%;}
+.wizard .pay-row .pay-col-2 .c-sum .sum3{height: 95%; background: gainsboro;}
+.wizard .pay-row .pay-col-2 .hname{font-size: 15px; color: #283e71; font-family: sans-serif; margin-left: 10px;}
+.wizard .pay-row .pay-col-2 .c-sum .sum-3 .label3{font-family: sans-serif; font-size: 14px; color: #283e71;}
+.wizard .pay-row .pay-col-2 .c-sum .sum-3 .label4{font-family: sans-serif; font-size: 14px; color: #283e71;}
+.wizard .pay-row .pay-col-2 .c-sum .sum-3 .label4:hover{font-family: sans-serif; font-size: 14px; color: lightsteelblue;}
+.wizard > .actions a, .wizard > .actions a:hover, .wizard > .actions a:active{border-radius: 0; background:lightsteelblue; font-size: 15px; font-family: sans-serif; box-shadow: none !important;}
+.wizard .btn-group-sm>.btn, .btn-sm{border-radius: 0; background:lightsteelblue; font-size: 17px; font-family: sans-serif; box-shadow: none !important; color: white; }
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){margin-left: 10px; width: 90%;}
+/*3.part payment*/
+
+/*fin*/
+.fin1{background:#f0f3f7; width: 100%; height:30%;}
+.fin1 .field1{margin-top: 10px; }
+.fin1 .field1 .button-group{margin-left: 50px;}
+.fin1 .field1 .button-group .buton1 .link1{box-shadow: none !important; font-size:15px; font-family: sans-serif; border-radius: 0; background: lightsteelblue;  border: 1px solid #e8f3b1;}
+.fin1 .field1 .button-group .buton2 .link2{box-shadow: none !important; font-size:15px; font-family: sans-serif; border-radius: 0; background: lightsteelblue;  border: 1px solid #e8f3b1;}
+.fin1 .field1 .button-group .buton3 .link3{box-shadow: none !important; font-size:15px; font-family: sans-serif; border-radius: 0; background: lightsteelblue;  border: 1px solid #e8f3b1;}
+.fin1 .check{font-size: 45px; color: forestgreen; margin-top: 200px !important; margin-left: 360px;}
+.fin1 .kayıt1{font-size: 15px; font-family: sans-serif; color: #cb2c31; margin-top:10px; }
+.fin1 .kayıt2{font-size: 15px; font-family:sans-serif; color: black; }
+.fin2{background: #f0f3f7; width: 100%; height:70%; overflow: hidden;}
+.fin2 .float-end{background: #f0f3f7; width: 100%; height: 150px; margin-left: 100px;}
+.fin2 .float-start{background:#f0f3f7; width: 100%; height:250px; padding-top: 50px; margin-top: 5px; margin-left: 100px;}
+.fin2 .float-start .card-text{color: black; font-size:15px; font-family: sans-serif;}
+.fin2 .float-end .sonuc2{background:#f0f3f7;}
+.fin2 .float-end .sonuc2 .card-text{color: black; font-size: 15px; font-family: sans-serif;}
+.fin2 .float-end .sonuc3{background: #f0f3f7; margin-left: 425px; }
+.fin2 .float-end .sonuc3 .card-text{color: #283e71; font-size: 17px; font-family: sans-serif;}
+/*fin*/
+
+.wizard > .content > .body label.error{font-size:11px; font-family: sans-serif; margin-top: 10px !important ;}
+.jp-card-container{margin-top: 15px !important; margin-left: 30px !important; width: 80% !important; margin-bottom: 50px !important;}
+.wizard ul, .tabcontrol ul{display: flex; justify-content: center;}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <!-- 5173acc02a5acff4333999989a47f986 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\plugins\bootstrapv5\css\bootstrap.min.css">
+    <link rel="stylesheet" href="assets\plugins\fontawesome5.14.0\css\fontawesome.css">
+    <link rel="stylesheet" href="assets\plugins\fontawesome5.14.0\css\font-awesome-animation.min.css">
+    <link rel="stylesheet" href="assets\plugins\fontawesome5.14.0\css\all.css">
+    <link rel="stylesheet" href="assets\plugins\jquerysteps\jquery-steps-master\demo\css\jquery.steps.css">
+    <link rel="stylesheet" href="assets\plugins\select2\css\select2.min.css">
+    <link rel="stylesheet" href="assets\plugins\datepicker\css\bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="assets\plugins\ccard\css\card.css">
+    <link rel="stylesheet" href="assets\hotel\css\hotel.css">
+    <link rel="shortcut icon" type="image/png" href="assets\hotel\img\pool.jpg">
+
+    <title>BODRUM HOTEL</title>
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="float-end mt-4">
+            <a href="index.html"><button type="button" class="btn btn-light btn-1">Yeni Rezarvasyon Yap</button><a>
+          <a href="#"><button type="button" class="btn btn-light btn-1">Dil Seçimi</button><a>
+    </div>
+    <div class="header">
+      <h5 class="mainheader"><strong>BODRUM HOTEL</strong></h5>
+      <span class="secheader">Rezarvasyon Sistemi</span>
+    </div>
+  </div>
+  <div class="content">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="cards mt-2">
+              <div class="card-body">
+                <div class="wizard">
+                  <form action="fin.html" id="example-advanced-form" method="post">
+                    <div class="basic form-container" id="example-basic">
+                      <h3 class="title">Otel ve Tarih Seçimi</h3>
+                      <section>
+                        <div class="row row-2 ">
+                          <div class="col-sm-8 otel">
+                            <label class="input-group-text label-t" for="inputGroupSelect01">Rezarvasyon için otel
+                              seçiniz</label>
+                            <select class="js-example-basic-single select2 " style="width: 100%" required>
+                              <option></option>
+                              <option value="bih">Big İstanbul Hotel</option>
+                              <option value="lh">Lara Hotel</option>
+                              <option value="bh">Bodrum Hotel</option>
+                              <option value="dh">Dela Hotel</option>
+                              <option value="ah">Alanya Hotel</option>
+                              <option value="dah">Dardania Hotel</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-6 parent">
+                            <div class="card datecardx">
+                              <div class="card-header">
+                                Giriş Tarihi
+                              </div>
+                              <div class="card-body">
+                                <div class="input-group mb-3 datepicker-inline">
+                                  <button class="btn btn-outline-secondary datepicker-addon d-button" type="button"
+                                    id="button-add" required><i class="far fa-calendar-alt"></i></button>
+                                  <input type="text" class="form-control datepicker-addon " name="grs" required>
+                                </div>
+                              </div>
+                            </div> <!-- datecardx end -->
+                          </div>
+                          <div class="col-sm-6 child ">
+                            <div class="card datecardy">
+                              <div class="card-header">
+                                Çıkış Tarihi
+                              </div>
+                              <div class="card-body">
+                                <div class="input-group mb-3 datepicker-inline ">
+                                  <button class="btn btn-outline-secondary datepicker-addon d-button" type="button"
+                                    id="buttona-iki" required><i class="far fa-calendar-alt"></i></button>
+                                  <input type="text" class=" form-control datepicker-addon" name="cks" required>
+                                </div>
+                              </div>
+                            </div> <!-- datecardy end -->
+                          </div>
+                          <div class="col-sm-6 date1 ">
+                            <label class="input-group-text label-y " for="inputGroupSelect01">Yetişkin sayısı
+                              seçiniz</label>
+                            <select class=" js-example-basic-single select2 select-parent" style="width: 100%;" required
+                              name="ytskn">
+                              <option></option>
+                              <option></option>
+                              <option value="bir">1</option>
+                              <option value="iki">2</option>
+                              <option value="üç">3</option>
+                              <option value="dört">4</option>
+                              <option value="beş">5</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-6 date2">
+                            <label class="input-group-text label-y" for="inputGroupSelect01">Çocuk sayısı
+                              seçiniz</label>
+                            <select class="js-example-basic-single select2 select-parent" style="width: 100%">
+                              <option></option>
+                              <option></option>
+                              <option value="bir">1</option>
+                              <option value="iki">2</option>
+                              <option value="üç">3</option>
+                            </select>
+                          </div>
+                        </div> <!-- row end -->
+                      </section>
+                      <h3 class="title">Oda Tipi ve Manzara Seçimi</h3>
+                      <section>
+                        <div class="div-o-m form-container" id="val">
+                          <div class="row ">
+                            <h4>Oda Seçimi</h4>
+                            <div class="col col-sm-4 pic-1">
+                              <div class="card pic-card">
+                                <div class="card-header">
+                                  Standart
+                                  <input type="radio" id="stndrt1" class="input-hidden float-end " name="r1" />
+                                </div>
+                                <div class="card-body">
+                                  <img src="assets\hotel\img\standart.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <p>Fiyat: 1.500</p>
+                              </div>
+                            </div>
+                            <div class="col col-sm-4 pic-2">
+                              <div class="card pic-card-2">
+                                <div class="card-header">
+                                  Deluxe
+                                  <input type="radio" id="stndrt2" class="input-hidden float-end " name="r1" />
+                                </div>
+                                <div class="card-body sec-card">
+                                  <img src="assets\hotel\img\deluxe.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <p>Fiyat: 2.000</p>
+                              </div>
+                            </div>
+                            <div class="col col-sm-4 pic-3">
+                              <div class="card pic-card-3">
+                                <div class="card-header">
+                                  Suit
+                                  <input type="radio" id="stndrt3" class="input-hidden float-end " name="r1" />
+                                </div>
+                                <div class="card-body third-card">
+                                  <img src="assets\hotel\img\suit.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <p>Fiyat: 2.500</p>
+                              </div>
+                            </div>
+                          </div> <!-- alignitemstart end -->
+                        </div> <!-- div-o-m end -->
+                        <div class="div-m-o form-container" id="val2">
+                          <h4 class="mt-1">Manzara Seçimi</h4>
+                          <div class="row">
+                            <div class="col col-sm-4 pic-4">
+                              <div class="col col-sm-4 pic-4">
+                                <div class="card pic-card-4">
+                                  <div class="card-header">
+                                    Kara Manzaralı
+                                    <input type="radio" id="stndrt4" class="input-hidden float-end" name="r2" />
+                                  </div>
+                                  <div class="card-body sec-card">
+                                    <img src="assets\hotel\img\land.jpg" class="card-img-top" alt="...">
+                                  </div>
+                                  <p>Fiyat: 3.000</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col col-sm-4 pic-5">
+                              <div class="card pic-card-5">
+                                <div class="card-header">
+                                  Havuz Manzaralı
+                                  <input type="radio" id="stndrt5" class="input-hidden float-end" name="r2" />
+                                </div>
+                                <div class="card-body sec-card">
+                                  <img src="assets\hotel\img\pool.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <p>Fiyat: 3.500</p>
+                              </div>
+                            </div>
+                            <div class="col col-sm-4 pic-6">
+                              <div class="card pic-card-6">
+                                <div class="card-header">
+                                  Deniz Manzaralı
+                                  <input type="radio" id="stndrt6" class="input-hidden color float-end" name="r2" />
+                                </div>
+                                <div class="card-body third-card">
+                                  <img src="assets\hotel\img\sea.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <p>Fiyat:4.000</p>
+                              </div>
+                            </div>
+                          </div> <!-- alignitemstart end -->
+                        </div>
+                      </section>
+                      <h3 class="title">Önizleme ve Ödeme İşlemleri</h3>
+                      <section>
+                        <div class="container step-3">
+                          <div class="row pay-row">
+                            <div class="col pay-col-1">
+                              <div class="demo-container">
+                                <div class="card-wrapper">
+                                  <div class="form-container active">
+                                    <form action="" method="post">
+                                      <input class="no" placeholder="Kart no" type="tel" name="number" required>
+                                      <input class="isim " placeholder="İsim" type="text" name="name" required>
+                                  </div>
+                                  <input class="y-cvc " placeholder="CVC" type="number" name="cvc" required>
+                                  <div class="input-group datepicker-inline d-pic ">
+                                    <input type="month" id="start" name="expiry" min="2022-03" value="2022-05"
+                                      class="form-control y-input tarih" style="box-shadow:none;" required>
+                  </form>
+                </div> <!-- formcontainer div end -->
+              </div> <!-- card wrap end -->
+            </div> <!-- democont end -->
+          </div> <!-- paycol1 end -->
+          <div class="col pay-col-2">
+            <span class="hname"><strong>Bodrum Hotel (İstanbul)</strong></span>
+            <div class="container c-sum">
+              <div class="row sum">
+                <div class="col-sm sum1">
+                  <div class="float-start">
+                    <div class="form-group">
+                      <div class="col-sm">
+                        <label class="label1" for="">Giriş Tarihi:</label>
+                        <label class="label2" for="">20.07.2021</label>
+                        <!--<input type="text" value="20.07.2021" name="gt" class="form-control form-gt" required> -->
+                      </div>
+                      <div class="col-sm">
+                        <label class="label1" for="">Oda Tipi:</label>
+                        <label class="label2" for="">Standart</label>
+                        <!-- <input type="text" value="Standart" name="ot" class="form-control form-gt" required> -->
+                      </div>
+                      <div class="col-sm">
+                        <label class="label1" for="">Yetişkin Sayısı:</label>
+                        <label class="label2" for="">2</label>
+                        <!-- <input type="text" value="2" name="ys" class="form-control form-ys" required> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="float-end">
+                    <div class="form-group">
+                      <div class="col-sm">
+                        <label class="label1" for="">Çıkış Tarihi:</label>
+                        <label class="label2" for="">23.07.2021</label>
+                        <!-- <input type="text" name="ct" class="form-control form-ct" required> -->
+                      </div>
+                      <div class="col-sm">
+                        <label class="label1" for="">Manzara:</label>
+                        <label class="label2" for="">Deniz Manzarası</label>
+                        <!-- <input type="text" name="m" class="form-control form-m" required> -->
+                      </div>
+                      <div class="col-sm">
+                        <label class="label1" for="">Çocuk Sayısı:</label>
+                        <label class="label2" for="">1</label>
+                        <!-- <input type="text" name="cs" class="form-control form-cs" required> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row sum-2">
+                <div class="col-sm sum2">
+                  <input type="text" placeholder="Kupon Kodu" class="kupon">
+                </div>
+                <div class="col-sm col-sm-4">
+                  <button type="submit" class="btn btn-dark float-end">Kodu Kullan</button>
+                </div>
+              </div>
+              <div class="row sum-3">
+                <div class="col-sm sum3">
+                  <div class="col-sm">
+                    <label class="label3" for="">Oda Fiyatı</label>
+                    <label class="label4" for="">1.400</label>
+                    <!-- <input type="text" name="cs" class="form-control form-cs" required> -->
+                  </div>
+                  <div class="col-sm">
+                    <label class="label3" for="">Konaklama</label>
+                    <label class="label4" for="">2.500</label>
+                    <!-- <input type="text" name="cs" class="form-control form-cs" required> -->
+                  </div>
+                  <div class="col-sm-4">
+                    <label class="label3" for="">TOPLAM TUTAR</label>
+                    <label class="label4" for=""><strong>3.900 TL</strong></label>
+                    <!-- <input type="text" name="cs" class="form-control form-cs" required> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    </div> <!-- basic div end -->
+    </form>
+  </div> <!-- wizard div end -->
+  </div> <!-- card-body div end -->
+  </div> <!-- cards div end -->
+  </div> <!-- col-12 end -->
+  </div> <!-- row end -->
+  </div> <!-- container end -->
+  </div> <!-- containerfluid end -->
+  </div> <!-- content end -->
+
+  <script src="assets\plugins\jqueryv36\jquery-3.6.0.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <script src="assets\plugins\bootstrapv5\js\bootstrap.min.js"></script>
+  <script src="assets\plugins\jquerysteps\js\jquery.steps.min.js"></script>
+  <script src="assets\plugins\select2\js\select2.full.min.js"></script>
+  <script src="assets\plugins\select2\js\i18n\tr.js"></script>
+  <script src="assets\plugins\jqueryvalid\js\jquery.validate.min.js"></script>
+  <script src="assets\plugins\jqueryvalid\localization\messages_tr.js"></script>
+  <script src="assets\plugins\datepicker\js\bootstrap-datepicker.min.js"></script>
+  <script src="assets\plugins\datepicker\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.tr.js"></script>
+  <script src="assets\plugins\ccard\js\card.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.select2').select2();
+    });
+    var form = $("#example-advanced-form").show();
+    console.log(form);
+    $("#example-basic").steps({
+      headerTag: "h3",
+      bodyTag: "section",
+      transitionEffect: "fade",
+      autoFocus: true,
+      enableFinishButton: false,
+      onInit: function (event, currentIndex) {
+        var wizardid = '#' + $(this).attr('id');
+        $('' + wizardid + ' .actions ul').prepend(
+          '<li class="submitbtn"><button type="submit" class="btn btn-sm ">Ödemeyi Bitir</button></li>');
+        $('' + wizardid + ' .submitbtn').hide();
+      },
+      onStepChanging: function (event, currentIndex, newIndex) {
+        var wizardid = '#' + $(this).attr('id');
+        if (newIndex === $('' + wizardid + ' .body').length - 1) {
+          $('' + wizardid + ' .submitbtn').show();
+        } else {
+          $('' + wizardid + ' .submitbtn').hide();
+        }
+        if (currentIndex > newIndex) {
+          return true;
+        }
+        if (currentIndex < newIndex) {
+          form.find(".body:eq(" + newIndex + ") label.error").remove();
+          form.find(".body:eq(" + newIndex + ") .error").removeClass("error");
+        }
+        form.validate().settings.ignore = ":disabled,:hidden";
+        return form.valid();
+        return true;
+      }
+    });
+    $('.datepicker').datepicker({
+      format: "dd/mm/yyyy",
+      language: "tr"
+    });
+
+    $('.datepicker-addon').datepicker({
+      format: "dd/mm/yyyy",
+      startDate: "01/01/2021",
+      todayBtn: "linked",
+      language: "tr",
+      orientation: "bottom auto",
+      autoclose: true,
+      todayHighlight: true,
+      datesDisabled: ['08/06/2021', '08/21/2021'],
+      defaultViewDate: {
+        year: 1977,
+        month: 04,
+        day: 25
+      }
+    });
+
+    $('.datepicker-addon-2').datepicker({
+      format: "mm/yyyy",
+      startDate: "11/2021",
+      todayBtn: "linked",
+      language: "tr",
+      orientation: "bottom auto",
+      autoclose: true,
+      todayHighlight: true,
+      datesDisabled: ['06/2021', '21/2021'],
+      defaultViewDate: {
+        year: 1977,
+        month: 04,
+        day: 25
+      }
+    });
+    var c = new Card({
+      form: document.querySelector('form'),
+      container: '.card-wrapper'
+    });
+  </script>
+</body>
+
+</html>
